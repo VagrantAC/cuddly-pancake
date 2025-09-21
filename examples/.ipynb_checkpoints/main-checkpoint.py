@@ -58,4 +58,11 @@ grr = pd.plotting.scatter_matrix(
     alpha=0.8,
     cmap=mglearn.cm3,
 )
-plt.show()
+# plt.show()
+
+
+
+from sklearn.neighbors import KNeighborsClassifier
+knn = KNeighborsClassifier(n_neighbors=1)
+
+knn.fit(X_train, y_train)
